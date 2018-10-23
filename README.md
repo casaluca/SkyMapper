@@ -81,7 +81,7 @@ comparing to spectroscopic surveys).
 
 | ![My image](https://github.com/casaluca/SkyMapper/blob/master/images/CMD_5mil_fehcal.jpeg)
 |:--:| 
-| *As previous figure, but colour coding by [Fe/H] instead of density. Note that the cool side of the main-sequence preferentially hosts metal poor stars, which is not what you expect. I am still looking into this, but for the time being please beware of this issue!* |
+| *As previous figure, but colour coding by [Fe/H] instead of density. Note that the cool side of the main-sequence preferentially hosts metal poor stars, which is not what you expect. I'm still looking into this. For the time being, see discussion in the paper for calibration limits towards high surface gravities, and beware of this issue!* |
 
 Data access
 -------------------------------------------------------
