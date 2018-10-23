@@ -88,5 +88,8 @@ comparing to spectroscopic surveys).
 |:--:| 
 | *As previous figure, but colour coding by [Fe/H] instead of density. Note that the cool side of the main-sequence preferentially hosts metal poor stars, which is not what you expect. I am still looking into this, but for the time being please beware of this issue!* |
 
+Data access
+-------------------------------------------------------
+The catalogue will be soon uploaded on the [SkyMapper](http://skymapper.anu.edu.au/) pages to allow queries. For the time being, you can access it in full here, as fits or csv file. If you use it, please cite Casagrande et al. (2018).
 
 
