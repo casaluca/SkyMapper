@@ -82,7 +82,7 @@ comparing to spectroscopic surveys).
 
 | ![My image](https://github.com/casaluca/SkyMapper/blob/master/images/CMD_5mil.jpeg)
 |:--:| 
-| *CMD density plot when restricting the catalogue to 5 million stars with parallaxes better than 10% and other quality cuts as per [Arenou et al. (2018)](http://adsabs.harvard.edu/abs/2018A%26A...616A..17A).* |
+| *CMD density plot when restricting the catalogue to 5 million stars with parallaxes better than 10% and quality cuts (1) and (3) as per [Arenou et al. (2018)](http://adsabs.harvard.edu/abs/2018A%26A...616A..17A).* |
 
 | ![My image](https://github.com/casaluca/SkyMapper/blob/master/images/CMD_5mil_fehcal.jpeg)
 |:--:| 
