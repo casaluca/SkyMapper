@@ -1,7 +1,7 @@
 # SkyMapper
 Photometric stellar parameters
 -------------------------------------------------------
-| ![My image](https://github.com/casaluca/SkyMapper/blob/master/MW.png)
+| ![My image](https://github.com/casaluca/SkyMapper/blob/master/images/MW.png)
 |:--:| 
 | *Milky Way metallicity map using 9 million stars from the catalogue here provided. No quality cuts on parallaxes, only on photometry as explained below* |
 
@@ -76,3 +76,14 @@ in quadrature a scatter of 33K (the rms of Eq 10) plus a constant systematic of
 calibration, I added in quadrature an rms of 15 dex, so that the median uncertainty 
 for the sample peaks approximately at 0.2 dex (the precision suggested when 
 comparing to spectroscopic surveys).
+
+| ![My image](https://github.com/casaluca/SkyMapper/blob/master/images/CMD_5mil.jpeg)
+|:--:| 
+| *CMD density plot when restricting the catalogue to 5 million stars with parallaxes better than 10% and other quality cuts as per [Arenou et al. (2018)](http://adsabs.harvard.edu/abs/2018A%26A...616A..17A)* |
+
+| ![My image](https://github.com/casaluca/SkyMapper/blob/master/images/CMD_5mil_fehcal.jpeg)
+|:--:| 
+| *As previous figure, but colour coding by [Fe/H] instead of density* |
+
+
+
