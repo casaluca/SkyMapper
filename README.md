@@ -1,6 +1,9 @@
 # SkyMapper
 Photometric stellar parameters
 -------------------------------------------------------
+| ![My image](https://github.com/casaluca/SkyMapper/blob/master/MW.png)
+|:--:| 
+| *Milky Way metallicity map using 9 million stars from the catalogue here provided. No quality cuts on parallaxes, only on photometry as explained below* |
 
 Please find below a catalogue of stellar parameters for stars in
 both the [SkyMapper survey](http://adsabs.harvard.edu/abs/2018PASA...35...10W), 
