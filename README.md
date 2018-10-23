@@ -5,15 +5,9 @@ Photometric stellar parameters
 |:--:| 
 | *Milky Way metallicity map using 9 million stars from the catalogue here provided. No quality cuts on parallaxes, only on photometry as explained below.* |
 
-Please find below a catalogue of stellar parameters for stars in
+Please find below a catalogue of photometric stellar parameters for slightly over 9 million stars in
 both the [SkyMapper survey](http://adsabs.harvard.edu/abs/2018PASA...35...10W), 
-and Gaia DR2. The catalogue contains SkyMapper
-['object_id'](http://skymapper.anu.edu.au/table-browser/), 
-Gaia ['source_id'](https://gaia.aip.de/metadata/gdr2/gaia_source/), 
-effective temperatures 'Teff', metallicities '[Fe/H]' and their uncertainties 
-'e_Teff', 'e_[Fe/H]' for slightly over 9 million sources.
-
-Teff and [Fe/H] have been derived from SkyMapper+2MASS photometry as explained
+and Gaia DR2. Teff and [Fe/H] have been derived from SkyMapper+2MASS photometry as explained
 in Casagrande et al. (2018). Briefly: all photometry has been corrected for
 reddening as explained in Section 5 of the paper. SkyMapper v band photometry has 
 also been corrected to account for spatial variations of zero-points across the sky, see
@@ -92,4 +86,5 @@ Data access
 -------------------------------------------------------
 The catalogue will be soon uploaded on the [SkyMapper](http://skymapper.anu.edu.au/) pages to allow queries. For the time being, you can access it in full here, as [fits](https://www.dropbox.com/s/05k6mjeyegy3br6/SMGaia.fits.gz?dl=0) or [csv](https://www.dropbox.com/s/ho75vft5002iyf3/SMGaia.csv.gz?dl=0) file. If you use it, please cite Casagrande et al. (2018).
 
+The catalogue contains SkyMapper ['object_id'](http://skymapper.anu.edu.au/table-browser/), Gaia ['source_id'](https://gaia.aip.de/metadata/gdr2/gaia_source/), effective temperatures 'Teff', metallicities '[Fe/H]' and their uncertainties 'e_Teff', 'e_[Fe/H]'.
 
