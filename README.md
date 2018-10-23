@@ -89,7 +89,7 @@ comparing to spectroscopic surveys).
 Data access
 -------------------------------------------------------
 The catalogue will be soon uploaded on the [SkyMapper](http://skymapper.anu.edu.au/) pages to allow queries, and 
-available here, as fits or csv. Follow this space, or just drop me an email! If you use it, please cite 
+linked here, as fits or csv. Follow this space, or just drop me an email! If you use it, please cite 
 Casagrande et al. (2018).
 
 The catalogue contains SkyMapper ['object_id'](http://skymapper.anu.edu.au/table-browser/), Gaia ['source_id'](https://gaia.aip.de/metadata/gdr2/gaia_source/), effective temperatures 'Teff', metallicities '[Fe/H]' and their uncertainties 'e_Teff', 'e_[Fe/H]'.
