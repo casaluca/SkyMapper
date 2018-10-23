@@ -36,11 +36,12 @@ Eq. (13) and (14) for these fiducials. These fiducials limit the lowest
 metallicity to -2.5 dex, so you will not find anything below this. On the metal-rich side, 
 beware of stars above 0.5 dex. If you wish to relax any of these
 requirements, or apply different values of reddening, in Casagrande et al.
-(2018) there is enough information for you to build your own catalogue. 
+(2018) there is all the information you need to aaply the calibrations and 
+build your own catalogue.
 
 Feel free to use this data for your own scientific investigations, and please
 let me know if you find anything unusual, have any question and/or suggestion.
-I expect this parameters to be OK, not to be perfect! As you can see from the
+I expect these parameters to be OK, not to be perfect! As you can see from the
 paper, the metallicity calibration is rather straightforward, with minimal number 
 of bands, no priors nor modelling involved. I am not claiming this is the best 
 approach, but it allows to readily understand how colours are mapped into [Fe/H], and 
