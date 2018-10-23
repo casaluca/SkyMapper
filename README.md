@@ -33,8 +33,11 @@ with SkyMapper photometric zero-points and crowdening towards the Galactic
 plane (this is all discussed in the paper). Further, only stars lying within the
 range of applicability of the metallicity calibration have been considered, see 
 Eq. (13) and (14) for these fiducials. These fiducials limit the lowest 
-metallicity to -2.5 dex, so you will not find anything below this. On the metal-rich side, 
-beware of stars above 0.5 dex. If you wish to relax any of these
+metallicity to -2.5 dex, so you will not find anything below this (however, because 
+of the increasing fraction of carbon-enhanced stars below −2, there can be 
+some stars than in fact are more metal poor, although they do not appear as such 
+in the present calibration. See discussion in Section 5.1.3). On the metal-rich 
+side, beware of stars above 0.5 dex. If you wish to relax any of these
 requirements, or apply different values of reddening, in Casagrande et al.
 (2018) there is all the information you need to aaply the calibrations and 
 build your own catalogue.
@@ -85,7 +88,9 @@ comparing to spectroscopic surveys).
 
 Data access
 -------------------------------------------------------
-The catalogue will be soon uploaded on the [SkyMapper](http://skymapper.anu.edu.au/) pages to allow queries. For the time being, you can access it in full here, as [fits](https://www.dropbox.com/s/05k6mjeyegy3br6/SMGaia.fits.gz?dl=0) or [csv](https://www.dropbox.com/s/ho75vft5002iyf3/SMGaia.csv.gz?dl=0) file. If you use it, please cite Casagrande et al. (2018).
+The catalogue will be soon uploaded on the [SkyMapper](http://skymapper.anu.edu.au/) pages to allow queries, and 
+available here, as fits or csv. Follow this space, or just drop me an email! If you use it, please cite 
+Casagrande et al. (2018).
 
 The catalogue contains SkyMapper ['object_id'](http://skymapper.anu.edu.au/table-browser/), Gaia ['source_id'](https://gaia.aip.de/metadata/gdr2/gaia_source/), effective temperatures 'Teff', metallicities '[Fe/H]' and their uncertainties 'e_Teff', 'e_[Fe/H]'.
 
