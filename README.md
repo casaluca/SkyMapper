@@ -90,6 +90,6 @@ comparing to spectroscopic surveys).
 
 Data access
 -------------------------------------------------------
-The catalogue will be soon uploaded on the [SkyMapper](http://skymapper.anu.edu.au/) pages to allow queries. For the time being, you can access it in full here, as fits or csv file. If you use it, please cite Casagrande et al. (2018).
+The catalogue will be soon uploaded on the [SkyMapper](http://skymapper.anu.edu.au/) pages to allow queries. For the time being, you can access it in full here, as [fits](https://www.dropbox.com/s/05k6mjeyegy3br6/SMGaia.fits.gz?dl=0) or [csv](https://www.dropbox.com/s/ho75vft5002iyf3/SMGaia.csv.gz?dl=0) file. If you use it, please cite Casagrande et al. (2018).
 
 
