@@ -48,7 +48,7 @@ Feel free to use this data for your own scientific investigations, and please
 let me know if you find anything unusual, have any question and/or suggestion.
 I expect this parameters to be OK, not to be perfect! As you can see from the
 paper, the metallicity calibration is rather straightforward, with minimal number 
-of bands, no priors or modelling involved. I am not claiming this is the best 
+of bands, no priors nor modelling involved. I am not claiming this is the best 
 approach, but it allows to readily understand how colours are mapped into [Fe/H], and 
 to propagate uncertainties. The reason for using few 
 bands stems from the fact photometric uncertainties are still rather large in 
@@ -57,8 +57,8 @@ adding more bands with little metallicity sensitivity carries almost more noise
 than information. Hence, the  metallicity calibration currently  relies on v band, which 
 has the strongest  sensitivity to [Fe/H] (see also Fig 15 in the accompanying paper. u 
 band is also metallicity sensitive, but has stronger dependence on surface gravity than 
-v). If you so fancy, you are  welcome to improve these metallicities by introducing more 
-refined approaches. The goal here is to provide the community with something reasonably 
+v). You are  welcome to improve these metallicities by introducing more refined 
+approaches, if you so fancy. The goal here is to provide the community with something reasonably 
 good, reasonably soon. Also, the metallicity calibration works in a direction 
 roughly parallel to the reddening vector; hence the effect of reddening is minimized 
 (that is not to say that reddening has no effect! In fact, you can propagate a 
