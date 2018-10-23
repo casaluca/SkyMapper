@@ -38,7 +38,9 @@ requirement avoids regions with very high reddening, as well as issues
 with SkyMapper photometric zero-points and crowdening towards the Galactic
 plane (this is all discussed in the paper). Further, only stars lying within the
 range of applicability of the metallicity calibration have been considered, see 
-Eq. (13) and (14) for these fiducials. If you wish to relax any of these
+Eq. (13) and (14) for these fiducials. These fiducials limit the lowest 
+metallicity to -2.5 dex, so you will not find anything below this. On the metal-rich side, 
+beware of stars above 0.5 dex. If you wish to relax any of these
 requirements, or apply different values of reddening, in Casagrande et al.
 (2018) there is enough information for you to build your own catalogue. 
 
@@ -46,16 +48,17 @@ Feel free to use this data for your own scientific investigations, and please
 let me know if you find anything unusual, have any question and/or suggestion.
 I expect this parameters to be OK, not to be perfect! As you can see from the
 paper, the metallicity calibration is rather straightforward, with minimal number 
-of bands, and no prior assumptions: this makes it easy to understand how colours 
-are mapped in [Fe/H], and to propagate uncertainties. The reason for using few 
+of bands, no priors or modelling involved. I am not claiming this is the best 
+approach, but it allows to readily understand how colours are mapped into [Fe/H], and 
+to propagate uncertainties. The reason for using few 
 bands stems from the fact photometric uncertainties are still rather large in 
 current SkyMapper photometry, i.e. unless you also introduce other assumptions, 
 adding more bands with little metallicity sensitivity carries almost more noise 
 than information. Hence, the  metallicity calibration currently  relies on v band, which 
 has the strongest  sensitivity to [Fe/H] (see also Fig 15 in the accompanying paper. u 
 band is also metallicity sensitive, but has stronger dependence on surface gravity than 
-v). If you so fancy, you are  welcome to improve these metallicities by introducing priors 
-and more refined approaches. The goal here is to provide the community with something reasonably 
+v). If you so fancy, you are  welcome to improve these metallicities by introducing more 
+refined approaches. The goal here is to provide the community with something reasonably 
 good, reasonably soon. Also, the metallicity calibration works in a direction 
 roughly parallel to the reddening vector; hence the effect of reddening is minimized 
 (that is not to say that reddening has no effect! In fact, you can propagate a 
@@ -83,7 +86,7 @@ comparing to spectroscopic surveys).
 
 | ![My image](https://github.com/casaluca/SkyMapper/blob/master/images/CMD_5mil_fehcal.jpeg)
 |:--:| 
-| *As previous figure, but colour coding by [Fe/H] instead of density. Note that the cool side of the main-sequence preferentially hosts metal poor stars, which is not what you expect. I am still looking into this, but for the time being please be aware of this problem!* |
+| *As previous figure, but colour coding by [Fe/H] instead of density. Note that the cool side of the main-sequence preferentially hosts metal poor stars, which is not what you expect. I am still looking into this, but for the time being please beware of this problem!* |
 
 
 
