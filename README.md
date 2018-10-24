@@ -8,8 +8,8 @@ Photometric stellar parameters
 Please find below a catalogue of photometric stellar parameters for slightly over 9 million stars in
 both the [SkyMapper survey](http://adsabs.harvard.edu/abs/2018PASA...35...10W), 
 and Gaia DR2. Teff and [Fe/H] have been derived from SkyMapper+2MASS photometry as explained
-in Casagrande et al. (2018). Briefly: all photometry has been corrected for
-reddening as explained in Section 5 of the paper. SkyMapper v band photometry has 
+in [Casagrande et al. (2018)](https://arxiv.org/abs/1810.09581). Briefly: all photometry has 
+been corrected for reddening as explained in Section 5 of the paper. SkyMapper v band photometry has 
 also been corrected to account for spatial variations of zero-points across the sky, see
 Eq (5). Yes, zero-points are as important as boring, so please never overlook
 them!
@@ -38,9 +38,9 @@ of the increasing fraction of carbon-enhanced stars below −2, there can be
 some stars than in fact are more metal poor, although they do not appear as such 
 in the present calibration. See discussion in Section 5.1.3). On the metal-rich 
 side, beware of stars above 0.5 dex. If you wish to relax any of these
-requirements, or apply different values of reddening, in Casagrande et al.
-(2018) there is all the information you need to aaply the calibrations and 
-build your own catalogue.
+requirements, or apply different values of reddening, in [Casagrande et al.
+(2018)](https://arxiv.org/abs/1810.09581) there is all the information you 
+need to aaply the calibrations and build your own catalogue.
 
 Feel free to use this data for your own scientific investigations, and please
 let me know if you find anything unusual, have any question and/or suggestion.
@@ -90,7 +90,7 @@ Data access
 -------------------------------------------------------
 The catalogue will be soon uploaded on the [SkyMapper](http://skymapper.anu.edu.au/) pages to allow queries, and 
 linked here, as fits or csv. Follow this space, or just drop me an email! If you use it, please cite 
-Casagrande et al. (2018).
+[Casagrande et al. (2018)](https://arxiv.org/abs/1810.09581).
 
 The catalogue contains SkyMapper ['object_id'](http://skymapper.anu.edu.au/table-browser/), Gaia ['source_id'](https://gaia.aip.de/metadata/gdr2/gaia_source/), effective temperatures 'Teff', metallicities '[Fe/H]' and their uncertainties 'e_Teff', 'e_[Fe/H]'.
 
