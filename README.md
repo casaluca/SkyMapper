@@ -3,10 +3,10 @@ Photometric stellar parameters
 -------------------------------------------------------
 | ![My image](https://github.com/casaluca/SkyMapper/blob/master/images/MW.png)
 |:--:| 
-| *Milky Way metallicity map using 9 million stars from the catalogue here provided. No quality cuts on parallaxes, only on photometry as explained below.* |
+| *Milky Way metallicity map using 9 million stars from the catalogue here provided. No quality cuts on parallaxes, only on photometry as explained below. In this Cartesian frame, the Sun is located at 0,0.* |
 
-Please find below a catalogue of photometric stellar parameters for slightly over 9 million stars in
-both the [SkyMapper survey](http://adsabs.harvard.edu/abs/2018PASA...35...10W), 
+Please find below a catalogue of photometric stellar parameters for 9+ million stars in
+common between the [SkyMapper survey](http://adsabs.harvard.edu/abs/2018PASA...35...10W), 
 and Gaia DR2. Teff and [Fe/H] have been derived from SkyMapper+2MASS photometry as explained
 in [Casagrande et al. (2018)](https://arxiv.org/abs/1810.09581). Briefly: all photometry has 
 been corrected for reddening as explained in Section 5 of the paper. SkyMapper v band photometry has 
@@ -33,9 +33,9 @@ with SkyMapper photometric zero-points and crowdening towards the Galactic
 plane (this is all discussed in the paper). Further, only stars lying within the
 range of applicability of the metallicity calibration have been considered, see 
 Eq. (13) and (14) for these fiducials. These fiducials limit the lowest 
-metallicity to -2.5 dex, so you will not find anything below this (however, because 
+metallicity to -2.5 dex, so you will not find anything below this (because 
 of the increasing fraction of carbon-enhanced stars below −2, there can be 
-some stars than in fact are more metal poor, although they do not appear as such 
+some stars that in fact are more metal poor, although they do not appear as such 
 in the present calibration. See discussion in Section 5.1.3). On the metal-rich 
 side, beware of stars above 0.5 dex. If you wish to relax any of these
 requirements, or apply different values of reddening, in [Casagrande et al.
@@ -71,12 +71,12 @@ to within 0.2 dex (rms), but do not be surprised if you occasionally find much
 larger differences (mind you, the distribution of residual is very close to 
 Gaussian, see insets in Fig 11 and 13). The uncertainties quoted in this catalogue 
 are obtained propagatig nominal photometric errors through the Teff and [Fe/H] 
-calibrations. In addition to that, for the effective temperature calibration, I added 
-in quadrature a scatter of 33K (the rms of Eq 10) plus a constant systematic of 
-20K (the uncertainty on the zero-point of the Teff scale). For the metallicity 
-calibration, I added in quadrature an rms of 15 dex, so that the median uncertainty 
-for the sample peaks approximately at 0.2 dex (the precision suggested when 
-comparing to spectroscopic surveys).
+calibrations. In addition to that, for the effective temperature calibration, a 
+scatter of 33K (the rms of Eq 10) is added in quadrature. A constant systematic of 
+20K is further included (the uncertainty on the zero-point of the Teff scale). For 
+the metallicity calibration, an rms of 15 dex is added in quadrature, so that the 
+median uncertainty for the sample peaks approximately at 0.2 dex (the precision 
+suggested when comparing to spectroscopic surveys).
 
 | ![My image](https://github.com/casaluca/SkyMapper/blob/master/images/CMD_5mil.jpeg)
 |:--:| 
