@@ -40,7 +40,7 @@ in the present calibration. See discussion in Section 5.1.3). On the metal-rich
 side, beware of stars above 0.5 dex. If you wish to relax any of these
 requirements, or apply different values of reddening, in [Casagrande et al.
 (2018)](https://arxiv.org/abs/1810.09581) there is all the information you 
-need to aaply the calibrations and build your own catalogue.
+need to apply the calibrations and build your own catalogue.
 
 Feel free to use this data for your own scientific investigations, and please
 let me know if you find anything unusual, have any question and/or suggestion.
