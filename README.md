@@ -14,7 +14,7 @@ also been corrected to account for spatial variations of zero-points across the 
 Eq (5). Yes, zero-points are as important as boring, so please never overlook
 them!
 Effective temperatures come from Eq (10), which is calibrated upon a sample of 
-stars with effective temperatures from the 
+86,000 stars with effective temperatures from the 
 [InfraRed Flux Method](http://adsabs.harvard.edu/abs/2010A%26A...512A..54C). [Fe/H] are
 derived using Eq (12), which is obtained using Principal Component Analysis on
 a sample of 70,000 stars with spectroscopic [Fe/H] from the 
@@ -42,6 +42,22 @@ requirements, or apply different values of reddening, in [Casagrande et al.
 (2018)](https://arxiv.org/abs/1810.09581) there is all the information you 
 need to apply the calibrations and build your own catalogue.
 
+The plots shown here suggest that stellar parameters are overall fine, but I
+haven't investigated all possible trends, and I am happy for the community to
+delve into this data. 
+Comparison to various spectroscopic surveys (see Fig 11 and 13 in the
+accompanying paper) indicates that these photometric [Fe/H] are generally good
+to within 0.2 dex (rms), but do not be surprised if you occasionally find much
+larger differences (mind you, the distribution of residual is very close to 
+Gaussian, see insets in Fig 11 and 13). The uncertainties quoted in this catalogue 
+are obtained propagatig nominal photometric errors through the Teff and [Fe/H] 
+calibrations. In addition to that, for the effective temperature calibration, a 
+scatter of 33K (the rms of Eq 10) is added in quadrature. A constant systematic of 
+20K is further included (the uncertainty on the zero-point of the Teff scale). For 
+the metallicity calibration, an rms of 15 dex is added in quadrature, so that the 
+median uncertainty for the sample peaks approximately at 0.2 dex (the precision 
+suggested when comparing to spectroscopic surveys).
+
 Feel free to use this data for your own scientific investigations, and please
 let me know if you find anything unusual, have any question and/or suggestion.
 I expect these parameters to be OK, not to be perfect! As you can see from the
@@ -62,22 +78,6 @@ roughly parallel to the reddening vector; hence the effect of reddening is minim
 (that is not to say that reddening has no effect! In fact, you can propagate a 
 change of reddening in the metallicity calibration, and estimate its impact). 
 
-The plots shown here suggest that stellar parameters are overall fine, but I
-haven't investigated all possible trends, and I am happy for the community to
-delve into this data. 
-Comparison to various spectroscopic surveys (see Fig 11 and 13 in the
-accompanying paper) indicates that these photometric [Fe/H] are generally good
-to within 0.2 dex (rms), but do not be surprised if you occasionally find much
-larger differences (mind you, the distribution of residual is very close to 
-Gaussian, see insets in Fig 11 and 13). The uncertainties quoted in this catalogue 
-are obtained propagatig nominal photometric errors through the Teff and [Fe/H] 
-calibrations. In addition to that, for the effective temperature calibration, a 
-scatter of 33K (the rms of Eq 10) is added in quadrature. A constant systematic of 
-20K is further included (the uncertainty on the zero-point of the Teff scale). For 
-the metallicity calibration, an rms of 15 dex is added in quadrature, so that the 
-median uncertainty for the sample peaks approximately at 0.2 dex (the precision 
-suggested when comparing to spectroscopic surveys).
-
 | ![My image](https://github.com/casaluca/SkyMapper/blob/master/images/CMD_5mil.jpeg)
 |:--:| 
 | *CMD density plot when restricting the catalogue to 5 million stars with parallaxes better than 10% and quality cuts (1) and (3) as per [Arenou et al. (2018)](http://adsabs.harvard.edu/abs/2018A%26A...616A..17A).* |
@@ -92,5 +92,4 @@ The catalogue will be soon uploaded on the [SkyMapper](http://skymapper.anu.edu.
 linked here, as fits or csv. Follow this space, or just drop me an email! If you use it, please cite 
 [Casagrande et al. (2018)](https://arxiv.org/abs/1810.09581).
 
-The catalogue contains SkyMapper ['object_id'](http://skymapper.anu.edu.au/table-browser/), Gaia ['source_id'](https://gaia.aip.de/metadata/gdr2/gaia_source/), effective temperatures 'Teff', metallicities '[Fe/H]' and their uncertainties 'e_Teff', 'e_[Fe/H]'.
-
+The catalogue contains SkyMapper ['object_id'](http://skymapper.anu.edu.au/table-browser/), Gaia ['source_id'](https://gaia.aip.de/metadata/gdr2/gaia_source/), effective temperature 'Teff', uncertainty 'e_Teff', metallicity '[Fe/H]' and uncertainty 'e_[Fe/H]'.
