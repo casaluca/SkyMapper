@@ -22,10 +22,12 @@ a sample of 70,000 stars with spectroscopic [Fe/H] from the
 
 The catalogue provided here is restricted to stars passing a number of quality
 cuts: 2MASS Ks quality flag ['ph_qual'](https://old.ipac.caltech.edu/2mass/releases/allsky/doc/sec1_6b.html#phqual) 
-set to either 'A' or 'B', ['gal_contam'](https://old.ipac.caltech.edu/2mass/releases/allsky/doc/sec2_2a.html)
-= 0, SkyMapper ['class_star'](http://skymapper.anu.edu.au/table-browser/) > 0.8, 
+set to either 'A' or 'B', ['gal_contam'](https://old.ipac.caltech.edu/2mass/releases/allsky/doc/sec2_2a.html) = 0, 
+['mp_flg'](https://old.ipac.caltech.edu/2mass/releases/allsky/doc/sec2_2a.html) = 0, SkyMapper ['class_star'](http://skymapper.anu.edu.au/table-browser/) > 0.8, 
 ['prox'](http://skymapper.anu.edu.au/table-browser/) > 15, 
+['v_flags'](http://skymapper.anu.edu.au/table-browser/) = 0,
 ['e_v_psf'](http://skymapper.anu.edu.au/table-browser/) <= 0.1,
+['g_flags'](http://skymapper.anu.edu.au/table-browser/) = 0,
 ['e_g_psf'](http://skymapper.anu.edu.au/table-browser/) <= 0.04, 
 Galactic latitudes > |5| degrees from the plane. This last
 requirement avoids regions with very high reddening, as well as issues
@@ -92,4 +94,41 @@ The catalogue will be soon uploaded on the [SkyMapper](http://skymapper.anu.edu.
 linked here, as fits or csv. Follow this space, or just drop me an email! If you use it, please cite 
 [Casagrande et al. (2018)](https://arxiv.org/abs/1810.09581).
 
-The catalogue contains SkyMapper ['object_id'](http://skymapper.anu.edu.au/table-browser/), Gaia ['source_id'](https://gaia.aip.de/metadata/gdr2/gaia_source/), effective temperature 'Teff', uncertainty 'e_Teff', metallicity '[Fe/H]' and uncertainty 'e_[Fe/H]'.
+The catalogue contains SkyMapper ['object_id'](http://skymapper.anu.edu.au/table-browser/), Gaia ['source_id'](https://gaia.aip.de/metadata/gdr2/gaia_source/), effective temperature 'Teff', uncertainty 'e_Teff', metallicity 'feh' and uncertainty 'e_feh'.
+
+If you have downloaded the file as 'SMGaia.fits', e.g., do the following in python:
+```python
+from astropy import table
+t = table.Table()
+smgaia = t.read('SMGaia.fits')
+```
+
+or in IDL:
+```IDL
+ftab_ext,'SMGaia.fits','SkyMapper_object_id',object_id
+ftab_ext,'SMGaia.fits','Gaia_source_id',source_id
+ftab_ext,'SMGaia.fits','Teff',Teff
+ftab_ext,'SMGaia.fits','e_Teff',e_Teff
+ftab_ext,'SMGaia.fits','feh',feh
+ftab_ext,'SMGaia.fits','e_feh',e_feh
+```
+
+If instead you want to build your own catalogue, first you need to cross-match SkyMapper, Gaia and 2MASS Point Source Catalog. An example selecting a few useful columns (more than you need for the sake of the Teff and [Fe/H] calibration) could be the following: 
+```ruby
+SELECT
+    m.object_id, m.raj2000, m.dej2000, m.glon, m.glat, m.flags, m.u_flags, m.v_flags, m.g_flags, m.r_flags, m.i_flags, m.z_flags, m.class_star, m.u_psf, m.e_u_psf, m.v_psf, m.e_v_psf, m.g_psf, m.e_g_psf, m.r_psf, m.e_r_psf, m.i_psf, m.e_i_psf, m.z_psf, m.e_z_psf, m.ebmv_sfd, m.prox, t.pts_key, t.j_m, t.j_msigcom, t.h_m, t.h_msigcom, t.k_m, t.k_msigcom, t.ph_qual, t.bl_flg, t.cc_flg, t.gal_contam, g.source_id, g.parallax, g.parallax_error, g.astrometric_params_solved, g.visibility_periods_used, g.astrometric_chi2_al, g.astrometric_n_good_obs_al, g.phot_bp_rp_excess_factor, g.phot_g_mean_mag, g.phot_bp_mean_mag, g.phot_rp_mean_mag, g.phot_proc_mode, g.phot_variable_flag
+FROM
+    dr1.master m
+JOIN 
+    ext.twomass_psc t ON m.twomass_key1 = t.pts_key
+JOIN
+    ext.gaia_dr2 g ON m.gaia_dr2_id1 = g.source_id
+WHERE 
+    m.twomass_cat1='psc' 
+    AND m.v_flags=0
+    AND m.g_flags=0
+    AND g.parallax>0
+    AND t.k_m>0
+    AND t.mp_flg=0
+```
+Note that currently [SkyMapper queries]('http://skymapper.anu.edu.au/how-to-access/#tap') are limited to 1 million rows, so you will need to break the above into smaller chunks.
