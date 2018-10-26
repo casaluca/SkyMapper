@@ -113,7 +113,7 @@ ftab_ext,'SMGaia.fits','feh',feh
 ftab_ext,'SMGaia.fits','e_feh',e_feh
 ```
 
-If instead you want to build your own catalogue, first you need to cross-match SkyMapper, Gaia and 2MASS Point Source Catalog. An example selecting a few useful columns (more than you need for the sake of the Teff and [Fe/H] calibration) could be the following: 
+If instead you want to build your own catalogue, first you need to cross-match SkyMapper, Gaia and 2MASS Point Source Catalog. An example selecting a few useful columns (more than you need for the sake of the Teff and [Fe/H] calibration) with minimal quality constraints (no SkyMapper v and g flags, nor 2MASS minor planets flag) could be the following: 
 ```ruby
 SELECT
     m.object_id, m.raj2000, m.dej2000, m.glon, m.glat, m.flags, m.u_flags, m.v_flags, m.g_flags, m.r_flags, m.i_flags, m.z_flags, m.class_star, m.u_psf, m.e_u_psf, m.v_psf, m.e_v_psf, m.g_psf, m.e_g_psf, m.r_psf, m.e_r_psf, m.i_psf, m.e_i_psf, m.z_psf, m.e_z_psf, m.ebmv_sfd, m.prox, t.pts_key, t.j_m, t.j_msigcom, t.h_m, t.h_msigcom, t.k_m, t.k_msigcom, t.ph_qual, t.bl_flg, t.cc_flg, t.gal_contam, g.source_id, g.parallax, g.parallax_error, g.astrometric_params_solved, g.visibility_periods_used, g.astrometric_chi2_al, g.astrometric_n_good_obs_al, g.phot_bp_rp_excess_factor, g.phot_g_mean_mag, g.phot_bp_mean_mag, g.phot_rp_mean_mag, g.phot_proc_mode, g.phot_variable_flag
@@ -127,8 +127,6 @@ WHERE
     m.twomass_cat1='psc' 
     AND m.v_flags=0
     AND m.g_flags=0
-    AND g.parallax>0
-    AND t.k_m>0
     AND t.mp_flg=0
 ```
 Note that currently [SkyMapper queries]('http://skymapper.anu.edu.au/how-to-access/#tap') are limited to 1 million rows, so you will need to break the above into smaller chunks.
