@@ -129,4 +129,4 @@ WHERE
     AND m.g_flags=0
     AND t.mp_flg=0
 ```
-Note that currently [SkyMapper queries](http://skymapper.anu.edu.au/how-to-access/#tap) are limited to 1 million rows, so you will need to break the above into smaller chunks.
+Note that currently [SkyMapper queries](http://skymapper.anu.edu.au/how-to-access/#tap) are limited to 1 million rows, so you will need to break the above one into smaller chunks.
