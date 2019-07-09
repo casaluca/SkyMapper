@@ -8,7 +8,7 @@ Photometric stellar parameters
 Please find below a catalogue of photometric stellar parameters for 9+ million stars in
 common between the [SkyMapper survey](http://adsabs.harvard.edu/abs/2018PASA...35...10W), 
 and Gaia DR2. Teff and [Fe/H] have been derived from SkyMapper+2MASS photometry as explained
-in [Casagrande et al. (2018)](https://arxiv.org/abs/1810.09581). Briefly: all photometry has 
+in [Casagrande et al. (2019)](https://ui.adsabs.harvard.edu/abs/2019MNRAS.482.2770C/abstract). Briefly: all photometry has 
 been corrected for reddening as explained in Section 5 of the paper. SkyMapper v band photometry has 
 also been corrected to account for spatial variations of zero-points across the sky, see
 Eq (5). Yes, zero-points are as important as boring, so please never overlook
@@ -41,7 +41,7 @@ some stars that in fact are more metal poor, although they do not appear as such
 in the present calibration. See discussion in Section 5.1.3). On the metal-rich 
 side, beware of stars above 0.5 dex. If you wish to relax any of these
 requirements, or apply different values of reddening, in [Casagrande et al.
-(2018)](https://arxiv.org/abs/1810.09581) there is all the information you 
+(2019)](https://ui.adsabs.harvard.edu/abs/2019MNRAS.482.2770C/abstract) there is all the information you 
 need to apply the calibrations and build your own catalogue.
 
 The plots shown here suggest that stellar parameters are overall fine, but I
@@ -91,8 +91,8 @@ change of reddening in the metallicity calibration, and estimate its impact).
 Data access
 -------------------------------------------------------
 The catalogue will be soon uploaded on the [SkyMapper](http://skymapper.anu.edu.au/) pages to allow queries, and 
-it is linked [here](https://www.dropbox.com/sh/t4b5jlz0z5s2fsp/AAB0S7S0xsJU5ripHyX8mF-qa?dl=0), as [fits](https://www.dropbox.com/s/snhzqou3m6b7okr/SMGaia.fits?dl=0) and [csv](https://www.dropbox.com/s/usngqs02qqn75te/SMGaia.csv.gz?dl=0). Follow this space, or just drop me an email! If you use it, please cite 
-[Casagrande et al. (2018)](https://arxiv.org/abs/1810.09581).
+it is linked [here](https://www.dropbox.com/sh/t4b5jlz0z5s2fsp/AAB0S7S0xsJU5ripHyX8mF-qa?dl=0), as [fits](https://www.dropbox.com/s/snhzqou3m6b7okr/SMGaia.fits?dl=0) and [csv](https://www.dropbox.com/s/usngqs02qqn75te/SMGaia.csv.gz?dl=0). If you use it, please cite 
+[Casagrande et al. (2019)](https://ui.adsabs.harvard.edu/abs/2019MNRAS.482.2770C/abstract) and have a look at the [ReadMe](https://www.dropbox.com/s/2kykumr56ffihjk/ReadMe.txt?dl=0). 
 
 The catalogue contains SkyMapper ['object_id'](http://skymapper.anu.edu.au/table-browser/), Gaia ['source_id'](https://gaia.aip.de/metadata/gdr2/gaia_source/), effective temperature 'Teff', uncertainty 'e_Teff', metallicity 'feh' and uncertainty 'e_feh'.
 
