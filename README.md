@@ -90,8 +90,7 @@ change of reddening in the metallicity calibration, and estimate its impact).
 
 Data access
 -------------------------------------------------------
-The catalogue will be soon uploaded on the [SkyMapper](http://skymapper.anu.edu.au/) pages to allow queries, and 
-it is linked [here](https://www.dropbox.com/sh/t4b5jlz0z5s2fsp/AAB0S7S0xsJU5ripHyX8mF-qa?dl=0), as [fits](https://www.dropbox.com/s/snhzqou3m6b7okr/SMGaia.fits?dl=0) and [csv](https://www.dropbox.com/s/usngqs02qqn75te/SMGaia.csv.gz?dl=0). If you use it, please cite 
+The catalogue is available from the [SkyMapper](http://skymapper.anu.edu.au/_data/sm-gaia/) pages, as well as [here](https://www.dropbox.com/sh/t4b5jlz0z5s2fsp/AAB0S7S0xsJU5ripHyX8mF-qa?dl=0), as [fits](https://www.dropbox.com/s/snhzqou3m6b7okr/SMGaia.fits?dl=0) and [csv](https://www.dropbox.com/s/usngqs02qqn75te/SMGaia.csv.gz?dl=0). If you use it, please cite 
 [Casagrande et al. (2019)](https://ui.adsabs.harvard.edu/abs/2019MNRAS.482.2770C/abstract) and have a look at the [ReadMe](https://www.dropbox.com/s/2kykumr56ffihjk/ReadMe.txt?dl=0). 
 
 The catalogue contains SkyMapper ['object_id'](http://skymapper.anu.edu.au/table-browser/), Gaia ['source_id'](https://gaia.aip.de/metadata/gdr2/gaia_source/), effective temperature 'Teff', uncertainty 'e_Teff', metallicity 'feh' and uncertainty 'e_feh'.
