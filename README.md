@@ -97,9 +97,8 @@ The catalogue contains SkyMapper ['object_id'](http://skymapper.anu.edu.au/table
 
 If you have downloaded the file as 'SMGaia.fits', e.g., do the following in python:
 ```python
-from astropy import table
-t = table.Table()
-smgaia = t.read('SMGaia.fits')
+from astropy.table import Table
+smgaia=Table.read('SMGaia.fits')
 ```
 
 or in IDL:
